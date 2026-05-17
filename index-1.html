@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aman Lakhera — Developer & Cybersecurity Analyst</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="noise-overlay"></div>
+  <canvas class="stars-canvas" id="starsCanvas"></canvas>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">AL<span class="accent">_</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero" class="mob-link">Home</a>
+    <a href="#about" class="mob-link">About</a>
+    <a href="#skills" class="mob-link">Skills</a>
+    <a href="#experience" class="mob-link">Experience</a>
+    <a href="#projects" class="mob-link">Projects</a>
+    <a href="#certifications" class="mob-link">Certs</a>
+    <a href="#contact" class="mob-link">Hire Me</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Hello, I'm</p>
+      <h1 class="hero-name reveal">
+        Aman<br>
+        <span class="outline-text">Lakhera</span>
+      </h1>
+      <p class="hero-subtitle reveal">
+        Software Developer &nbsp;·&nbsp; Cybersecurity Analyst &nbsp;·&nbsp; Data Science Enthusiast
+      </p>
+      <div class="hero-meta reveal">
+        <span class="meta-item">📍 Pune, Maharashtra</span>
+        <span class="meta-divider">·</span>
+        <span class="meta-item">🎓 MCA — SGPA 8.27</span>
+        <span class="meta-divider">·</span>
+        <span class="meta-item">✅ Open to Opportunities</span>
+      </div>
+      <div class="hero-btns reveal">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-dunes"></div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label reveal">01 — About</div>
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <h2 class="section-title">Building at the<br><em>Intersection</em> of<br>Code & Security</h2>
+        </div>
+        <div class="about-right reveal">
+          <p class="about-text">
+            I'm a <strong>motivated MCA student</strong> (2025–2027) and B.Sc. Computer Science graduate from Jiwaji University with a passion for building secure, efficient, and impactful software solutions.
+          </p>
+          <p class="about-text">
+            Through <strong>virtual simulations with TCS and EY</strong>, I've tackled real-world cybersecurity and technology risk scenarios. With expertise spanning <strong>Python, web development, IAM, and data science</strong>, I bring both depth and versatility to every project.
+          </p>
+          <div class="about-stats">
+            <div class="stat-box">
+              <span class="stat-num">8.27</span>
+              <span class="stat-label">SGPA (MCA)</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num">92/100</span>
+              <span class="stat-label">Capstone Score</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num">4+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+          </div>
+          <div class="about-links">
+            <a href="https://github.com/aman2305" target="_blank" class="social-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              github.com/aman2305
+            </a>
+            <a href="https://linkedin.com/in/aman-lakhera" target="_blank" class="social-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              linkedin.com/in/aman-lakhera
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-label reveal">02 — Skills</div>
+      <h2 class="section-title centered reveal">Technical <em>Arsenal</em></h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">⌨️</div>
+          <h3>Programming</h3>
+          <div class="skill-tags">
+            <span>Python</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>SQL</span><span>C</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🛡️</div>
+          <h3>Cybersecurity</h3>
+          <div class="skill-tags">
+            <span>IAM</span><span>Network Security</span><span>Platform Integration</span><span>Risk Assessment</span><span>Access Control</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🌐</div>
+          <h3>Networking</h3>
+          <div class="skill-tags">
+            <span>TCP/IP</span><span>OSI Model</span><span>LAN/WAN</span><span>Network Admin</span><span>Data Comm</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">📊</div>
+          <h3>Data Science</h3>
+          <div class="skill-tags">
+            <span>NumPy</span><span>Pandas</span><span>Data Analysis</span><span>Visualization</span><span>Python DS</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">💻</div>
+          <h3>Web Development</h3>
+          <div class="skill-tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>RESTful APIs</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🔧</div>
+          <h3>Tools & Concepts</h3>
+          <div class="skill-tags">
+            <span>Git / GitHub</span><span>Linux</span><span>OOP</span><span>SDLC</span><span>Agile</span><span>Cloud Basics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-label reveal">03 — Experience</div>
+      <h2 class="section-title reveal">Where I've <em>Worked</em></h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">April 2026</div>
+          <div class="timeline-card">
+            <div class="timeline-company">TATA Consultancy Services (TCS)</div>
+            <div class="timeline-role">Cybersecurity Analyst — Virtual Job Simulation</div>
+            <div class="timeline-via">via Forage</div>
+            <ul class="timeline-points">
+              <li>Analyzed IAM frameworks and assessed IAM strategy for enterprise security compliance.</li>
+              <li>Designed custom IAM solutions and implemented platform integration workflows for secure user authentication.</li>
+              <li>Gained hands-on experience in cybersecurity risk identification, access control policies, and enterprise security architecture.</li>
+            </ul>
+            <div class="timeline-badges">
+              <span>IAM</span><span>Cybersecurity</span><span>Enterprise Security</span><span>Access Control</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">April 2026</div>
+          <div class="timeline-card">
+            <div class="timeline-company">Ernst & Young (EY)</div>
+            <div class="timeline-role">Technology Risk Analyst — Virtual Job Simulation</div>
+            <div class="timeline-via">via Forage</div>
+            <ul class="timeline-points">
+              <li>Assessed technology risk exposure through structured business interaction and probing question techniques.</li>
+              <li>Collaborated in team-based risk evaluation exercises and produced risk conclusion reports aligned with EY standards.</li>
+              <li>Developed deep understanding of technology risk frameworks, audit processes, and risk mitigation strategies.</li>
+            </ul>
+            <div class="timeline-badges">
+              <span>Tech Risk</span><span>Risk Frameworks</span><span>Business Analysis</span><span>Audit</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-dark" id="projects">
+    <div class="container">
+      <div class="section-label reveal">04 — Projects</div>
+      <h2 class="section-title centered reveal">Featured <em>Work</em></h2>
+      <div class="projects-grid">
+        <div class="project-card featured reveal">
+          <div class="project-number">01</div>
+          <div class="project-badge">⭐ Outstanding</div>
+          <h3 class="project-title">Capstone Project — MCA Semester I</h3>
+          <p class="project-org">Dnyaan Prasad Global University, Pune · December 2025</p>
+          <p class="project-desc">
+            Developed an end-to-end software project applying Python programming, OOP principles, SDLC methodology, web development, and data science techniques. Awarded <strong>Outstanding (O) grade — 92/100</strong> by the university evaluation panel.
+          </p>
+          <div class="project-tags">
+            <span>Python</span><span>OOP</span><span>SDLC</span><span>Web Dev</span><span>Data Science</span>
+          </div>
+          <div class="project-score">
+            <span class="score-label">Grade</span>
+            <span class="score-value">O — 92/100</span>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-number">02</div>
+          <h3 class="project-title">IAM Strategy Design</h3>
+          <p class="project-org">TCS Cybersecurity Simulation · 2026</p>
+          <p class="project-desc">
+            Designed and assessed custom Identity & Access Management solutions for enterprise security, implementing platform integration workflows for secure authentication systems.
+          </p>
+          <div class="project-tags">
+            <span>IAM</span><span>Security</span><span>Authentication</span>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-number">03</div>
+          <h3 class="project-title">Technology Risk Assessment</h3>
+          <p class="project-org">EY Virtual Simulation · 2026</p>
+          <p class="project-desc">
+            Produced structured risk conclusion reports aligned with EY audit standards, using business interaction frameworks and probing question techniques to identify technology risk exposure.
+          </p>
+          <div class="project-tags">
+            <span>Risk Analysis</span><span>Audit</span><span>Reporting</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-label reveal">05 — Certifications</div>
+      <h2 class="section-title reveal">Verified <em>Credentials</em></h2>
+      <div class="certs-grid">
+        <div class="cert-card reveal">
+          <div class="cert-logo tcs">TCS</div>
+          <div class="cert-info">
+            <h3>Cybersecurity Analyst Job Simulation</h3>
+            <p class="cert-issuer">TATA Consultancy Services via Forage</p>
+            <p class="cert-date">April 2026</p>
+            <div class="cert-skills">IAM Fundamentals · IAM Strategy · Platform Integration · Enterprise Cybersecurity</div>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-logo ey">EY</div>
+          <div class="cert-info">
+            <h3>Technology Risk Virtual Job Simulation</h3>
+            <p class="cert-issuer">Ernst & Young (EY) via Forage</p>
+            <p class="cert-date">April 2026</p>
+            <div class="cert-skills">Technology Risk · Risk Frameworks · Business Analysis · Risk Reporting</div>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-logo sa">SA</div>
+          <div class="cert-info">
+            <h3>CS402: Computer Communications & Networks</h3>
+            <p class="cert-issuer">Saylor Academy</p>
+            <p class="cert-date">Feb 2026 · 76.92% · 38 Hours</p>
+            <div class="cert-skills">OSI Model · TCP/IP · Network Protocols · LAN/WAN</div>
+            <p class="cert-id">Credential ID: 4971131821AL</p>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-logo sa">SA</div>
+          <div class="cert-info">
+            <h3>CS250: Python for Data Science</h3>
+            <p class="cert-issuer">Saylor Academy</p>
+            <p class="cert-date">Feb 2026 · 70.93% · 67 Hours</p>
+            <div class="cert-skills">Python · NumPy · Pandas · Data Analysis · Visualization</div>
+            <p class="cert-id">Credential ID: 1560896729AL</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section section-dark" id="education">
+    <div class="container">
+      <div class="section-label reveal">06 — Education</div>
+      <h2 class="section-title centered reveal">Academic <em>Journey</em></h2>
+      <div class="edu-list">
+        <div class="edu-card reveal">
+          <div class="edu-year">2025–2027</div>
+          <div class="edu-content">
+            <h3>Master of Computer Applications (MCA)</h3>
+            <p class="edu-uni">Dnyaan Prasad Global University (DPGU), Pune</p>
+            <p class="edu-score">SGPA: 8.27 | 75.73%</p>
+            <div class="edu-courses">
+              <span>Python (A+)</span><span>Data Communication (A)</span><span>Cyber Security</span>
+              <span>Data Science (A)</span><span>Network Admin (A)</span><span>Capstone: 92/100 ⭐</span>
+            </div>
+          </div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-year">2021–2024</div>
+          <div class="edu-content">
+            <h3>B.Sc. — Computer Science, Mathematics & Physics</h3>
+            <p class="edu-uni">Jiwaji University, Gwalior | Govt. P.G. College, Guna</p>
+            <p class="edu-score">First Division | 990 / 1650</p>
+          </div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-year">2019</div>
+          <div class="edu-content">
+            <h3>12th — Science Stream (MP Board)</h3>
+            <p class="edu-uni">Saraswati Shishu Vidhya Mandir H.S. School, Khachrod, Ujjain</p>
+            <p class="edu-score">295 / 500</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-label reveal">07 — Contact</div>
+      <div class="contact-wrapper">
+        <h2 class="contact-heading reveal">Let's Build<br><em>Something</em><br>Together.</h2>
+        <div class="contact-right reveal">
+          <p class="contact-intro">
+            Actively seeking entry-level roles in <strong>Software Development, Cybersecurity, Networking,</strong> or <strong>Data Science</strong>. If you're looking for someone driven, fast-learning, and technically sharp — let's talk.
+          </p>
+          <div class="contact-cards">
+            <a href="mailto:amanlakhera510@hotmail.com" class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <div>
+                <div class="contact-label">Email</div>
+                <div class="contact-value">amanlakhera510@hotmail.com</div>
+              </div>
+            </a>
+            <a href="tel:+916268365836" class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <div class="contact-label">Phone</div>
+                <div class="contact-value">+91 6268365836 / +91 9174146861</div>
+              </div>
+            </a>
+            <a href="https://github.com/aman2305" target="_blank" class="contact-item">
+              <div class="contact-icon">🔗</div>
+              <div>
+                <div class="contact-label">GitHub</div>
+                <div class="contact-value">github.com/aman2305</div>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/aman-lakhera" target="_blank" class="contact-item">
+              <div class="contact-icon">💼</div>
+              <div>
+                <div class="contact-label">LinkedIn</div>
+                <div class="contact-value">linkedin.com/in/aman-lakhera</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <span class="footer-name">Aman Lakhera</span>
+        <span class="footer-copy">© 2026 — All rights reserved</span>
+        <span class="footer-built">Built with passion & precision</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
